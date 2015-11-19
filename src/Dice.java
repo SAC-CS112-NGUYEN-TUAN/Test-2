@@ -1,20 +1,21 @@
 
 public class Dice {
 			
+	private String result;
+	private int randomnum = 0;
+		
+			public String Throw(int dices){
 			
-		public String Throw(int dices){
-			String result;
-			int randomnum = 0;
-			for ( int e = 0; e < dices;e++){
-			
-				{
+			for ( int i = 0; i < dices;i++){
 				randomnum += 1 + (int) (Math.random()*6);
-				}
 			}
+			
 			if (randomnum > (dices*6)/2){result = "hi";
 			}
+			
 			else {result = "lo";
 			}
+			
 			System.out.println("random number: "+ randomnum);//debug
 			return result;
 		}
