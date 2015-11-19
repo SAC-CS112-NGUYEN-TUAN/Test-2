@@ -18,6 +18,7 @@ public class Main {
 		
 		System.out.println("your guess Hi or Lo  : ");
 			String g = input.next();	
+			g.toLowerCase();
 			System.out.println("your guess is  : " + g);//debug
 		
 			
@@ -33,6 +34,7 @@ public class Main {
 		
 		System.out.println("Do you want to play again ? Y/N");
 		again = input.next();
-	}while( again.equals("Y"));		
+		again.toLowerCase();
+	}while( again.equals("y"));		
 	}
 }

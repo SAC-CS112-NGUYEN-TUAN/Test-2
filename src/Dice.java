@@ -11,9 +11,9 @@ public class Dice {
 				randomnum += 1 + (int) (Math.random()*6);
 				}
 			}
-			if (randomnum > (dices*6)/2){result = "Hi";
+			if (randomnum > (dices*6)/2){result = "hi";
 			}
-			else {result = "Lo";
+			else {result = "lo";
 			}
 			System.out.println("random number: "+ randomnum);//debug
 			return result;
