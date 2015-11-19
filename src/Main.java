@@ -9,13 +9,11 @@ public class Main {
 		String again;
 		
 	do{
-		System.out.println("Insert bounces: ");
-			int b = input.nextInt();
-		
+				
 		System.out.println("Insert dices  : ");
 			int d = input.nextInt();	
 		
-			String mg = throwing.Throw(d, b);
+			String mg = throwing.Throw(d);
 			System.out.println("throwing result:" + mg);//debug
 		
 		System.out.println("your guess Hi or Lo  : ");
